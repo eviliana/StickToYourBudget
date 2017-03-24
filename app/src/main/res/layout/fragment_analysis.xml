@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:text="@string/ana1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="17sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Start"
+        android:layout_marginTop="19dp"
+        android:text="@string/ana3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textAlignment="textStart"
+        android:layout_alignEnd="@+id/dateStart" />
+
+    <TextView
+        android:textSize="17sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Finish"
+        android:text="@string/ana4"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/Start"
+        android:layout_alignBottom="@+id/Start"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/dateEnd"
+        android:textSize="14sp"
+        android:textColorHint="@drawable/selector"
+        android:hint="@string/ana5"
+        android:ems="10"
+        android:inputType="date"
+        android:selectAllOnFocus="false"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/Finish"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/buttonAnalyze" />
+
+        <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textSize="14sp"
+        android:id="@+id/dateStart"
+        android:textColorHint="@drawable/selector"
+        android:hint="@string/ana5"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_alignWithParentIfMissing="true"
+            android:selectAllOnFocus="false"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/Start"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/buttonAnalyze" />
+
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/analysisList"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonAnalyze" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonAnalyze"
+        android:text="@string/ana2"
+        android:layout_below="@+id/dateStart"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

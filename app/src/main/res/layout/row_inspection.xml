@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowCategory"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rowDescription"
+        />
+
+
+    <ImageView
+        android:id="@+id/item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel_circle"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/txtPrice">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/rowPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginEnd="86dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/item_delete" />
+
+    <TextView
+        android:text="@string/exp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPrice"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/rowPrice" />
+
+    <TextView
+        android:id="@+id/rowCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/rowDate"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

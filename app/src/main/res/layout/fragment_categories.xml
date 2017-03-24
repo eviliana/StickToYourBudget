@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:text="@string/newcat3"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textCatDesc"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="17sp"
+        android:text="@string/newcat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textCatName"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:textSize="17sp"
+        android:text="@string/exp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textCatName"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView13"
+        android:hint="@string/exp5"
+        android:textColorHint="@drawable/selector"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textCatDesc"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/newcat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
